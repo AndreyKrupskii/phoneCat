@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-offset-8 col-md-offset-8 search-input  col-lg-4 col-md-4">
+			<input type="text" class="form-control" placeholder="Search" ng-model="query">
+		</div>
+		<div class="col-lg-8 col-md-8">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 phone-wrap phone animation" ng-repeat="phone in phones | filter: query">
+					<div class="phone_img-wrap"><img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"></div>
+					<h3>{{phone.name}}</h3>
+					<div class="phone_text-wrap"><p class="phone-text">{{phone.snippet}}</p></div>
+					<a class="btn-see" href="#/phones/{{phone.id}}">
+						<p>VIEW</p>   
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

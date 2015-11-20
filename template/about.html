@@ -7,12 +7,5 @@ Because Angular acts as the mediator, developers also won’t feel tempted to wr
 <p>Angular uses HTML to define the app’s user interface. HTML is a declarative language which is more intuitive and less convoluted than defining the interface procedurally in JavaScript. HTML is also less brittle to reorganize than an interface written in JavaScript, meaning things are less likely to break. Plus you can bring in many more UI developers when the view is written in HTML.
 
 HTML is also used to determine the execution of the app. Special attributes in the HTML determine which controllers to use for each element. These attributes determine “what” gets loaded, but not “how”. This declarative approach greatly simplifies app development in a sort of WYSIWYG (what you see is what you get) way. Rather than spending time on how the program flows and what should get loaded first, you simply define what you want and Angular will take care of the dependencies.</p>
-<p>Data models in Angular are plain old JavaScript objects (POJO) and don’t require extraneous getter and setter functions. You can add and change properties directly on it and loop over objects and arrays at will. Your code will look much cleaner and more intuitive, the way mother nature intended.
-
-Traditional data models are the gatekeepers of data and are responsible for data persistence and server syncing. Those data models behave like smart data providers. But since Angular’s data models are plain objects, they behave more like a cork board. A cork board is nothing more than a temporary storage area for people to put and retrieve data. However, Angular’s cork boards work closely with a controller and view. To differentiate it from the traditional sense of data models, Angular calls them “scopes”.
-
-All properties found on the scope object are automatically bound to the view by Angular. Meaning, Angular quietly watches for changes to these properties and updates the view automatically.
-
-The scope has no data to begin with and relies on the controller to feed it data according to business logic needs.</p>
 	</div>
 </div>
